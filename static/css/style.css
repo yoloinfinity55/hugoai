@@ -168,6 +168,13 @@ body {
     margin-bottom: 1rem;
     font-size: 1.25rem;
     line-height: 1.4;
+    word-wrap: break-word;
+    word-break: break-word;
+    overflow: hidden;
+    max-height: 4.2rem;
+    display: -webkit-box;
+    -webkit-line-clamp: 3;
+    -webkit-box-orient: vertical;
 }
 
 .post-title a {
