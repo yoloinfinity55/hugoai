@@ -89,8 +89,10 @@ The site automatically deploys to GitHub Pages when you push to the main branch.
 To enable GitHub Pages:
 1. Go to your repository settings
 2. Navigate to "Pages"
-3. Select "Deploy from a branch"
-4. Choose "gh-pages" branch and "/ (root)" folder
+3. Under "Source", select "GitHub Actions"
+4. The site will be available at: `https://yourusername.github.io/hugoai/`
+
+**Note**: The first deployment may take a few minutes. Check the "Actions" tab in your repository to monitor the deployment status.
 
 ## 📁 Project Structure
 
