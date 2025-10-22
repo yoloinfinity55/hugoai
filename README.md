@@ -74,6 +74,20 @@ Example:
 python3 hugo_manager.py --url "https://www.youtube.com/watch?v=dQw4w9WgXcQ" --title "Rick Astley - Never Gonna Give You Up" --author "Music Blogger"
 ```
 
+## 🌐 View Your Site
+
+After deployment, your site will be available at:
+- **Main Site**: https://yoloinfinity55.github.io/hugoai/
+- **English Posts**: https://yoloinfinity55.github.io/hugoai/posts/
+- **Chinese Posts**: https://yoloinfinity55.github.io/hugoai/zh/posts/
+
+The homepage features:
+- **Beautiful grid layout** displaying all blog posts as cards
+- **Language filtering** (English/Chinese)
+- **Responsive design** that works on all devices
+- **Modern styling** with hover effects and smooth transitions
+- **Navigation menu** with links to posts, tags, and categories
+
 ## 🔄 Workflow
 
 1. **Input**: YouTube URL and title
