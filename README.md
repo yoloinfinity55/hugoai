@@ -112,10 +112,13 @@ To enable GitHub Pages:
 
 ```
 hugoai/
-├── .github/workflows/     # GitHub Actions
+├── .github/workflows/     # GitHub Actions CI/CD
+├── layouts/              # Custom Hugo templates
+├── static/               # Static assets (CSS, images)
+├── assets/               # Source assets (processed by Hugo)
 ├── archetypes/           # Hugo content templates
 ├── content/posts/        # Generated blog posts
-├── public/              # Built Hugo site
+├── public/              # Built Hugo site (auto-generated)
 ├── config.yaml          # Hugo configuration
 ├── hugo_manager.py      # Main automation script
 ├── requirements.txt     # Python dependencies
