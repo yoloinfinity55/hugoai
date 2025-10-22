@@ -1,5 +1,6 @@
 baseURL: "https://yoloinfinity55.github.io/hugoai/"
 title: "HugoAI Generated Content"
+theme: ""
 
 # HugoAI specific settings
 hugo_content_dir: "content/posts"
@@ -8,12 +9,90 @@ retry:
   max_attempts: 5
   backoff_base: 1.5
 
+# Site configuration
+enableEmoji: true
+enableRobotsTXT: true
+enableGitInfo: false
+
 # Multilingual support
 defaultContentLanguage: "en"
 languages:
   en:
     languageName: "English"
     weight: 1
+    menu:
+      main:
+        - name: "Home"
+          url: "/"
+          weight: 1
+        - name: "Posts"
+          url: "/posts/"
+          weight: 2
+        - name: "Tags"
+          url: "/tags/"
+          weight: 3
+        - name: "Categories"
+          url: "/categories/"
+          weight: 4
   zh:
     languageName: "中文"
     weight: 2
+    menu:
+      main:
+        - name: "首页"
+          url: "/zh/"
+          weight: 1
+        - name: "文章"
+          url: "/zh/posts/"
+          weight: 2
+        - name: "标签"
+          url: "/zh/tags/"
+          weight: 3
+        - name: "分类"
+          url: "/zh/categories/"
+          weight: 4
+
+# Content and taxonomies
+taxonomies:
+  tag: "tags"
+  category: "categories"
+
+# Pagination
+pagination:
+  pagerSize: 12
+summaryLength: 150
+
+# Build configuration
+build:
+  writeStats: false
+  useResourceCacheWhen: "fallback"
+
+# Asset pipeline
+assetDir: "assets"
+
+# Markup configuration
+markup:
+  goldmark:
+    renderer:
+      unsafe: true
+  highlight:
+    codeFences: true
+    guessSyntax: false
+    hl_Lines: ""
+    lineNoStart: 1
+    lineNos: false
+    lineNumbersInTable: true
+    noClasses: true
+    style: "github"
+    tabWidth: 4
+
+# Related content
+related:
+  includeNewer: true
+  threshold: 80
+  toLower: false
+  indices:
+    - name: "keywords"
+      weight: 100
+    - name: "date"
+      weight: 10

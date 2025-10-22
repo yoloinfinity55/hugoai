@@ -1,0 +1,54 @@
+{{ define "main" }}
+<div class="container">
+    <section class="hero">
+        <h1>Welcome to {{ .Site.Title }}</h1>
+        <p>AI-generated blog posts from YouTube videos</p>
+    </section>
+
+    <section class="posts-grid">
+        <div class="posts-header">
+            <h2>Latest Posts</h2>
+            <div class="language-filter">
+                <a href="{{ .Site.BaseURL }}" class="{{ if eq .Site.Language.Lang "en" }}active{{ end }}">English</a>
+                <a href="{{ .Site.BaseURL }}zh/" class="{{ if eq .Site.Language.Lang "zh" }}active{{ end }}">中文</a>
+            </div>
+        </div>
+
+        <div class="posts-container">
+            {{ $posts := where .Site.RegularPages "Type" "posts" }}
+            {{ range $posts.ByDate.Reverse }}
+            <article class="post-card">
+                <div class="post-meta">
+                    <time datetime="{{ .Date.Format "2006-01-02" }}">{{ .Date.Format "Jan 2, 2006" }}</time>
+                    <span class="language">{{ .Language.LanguageName }}</span>
+                </div>
+
+                <h3 class="post-title">
+                    <a href="{{ .Permalink }}">{{ .Title }}</a>
+                </h3>
+
+                {{ if .Description }}
+                <p class="post-excerpt">{{ .Description }}</p>
+                {{ else }}
+                <p class="post-excerpt">{{ .Summary | truncate 150 }}</p>
+                {{ end }}
+
+                <div class="post-tags">
+                    {{ range .Params.tags }}
+                    <span class="tag">{{ . }}</span>
+                    {{ end }}
+                </div>
+
+                <div class="post-categories">
+                    {{ range .Params.categories }}
+                    <span class="category">{{ . }}</span>
+                    {{ end }}
+                </div>
+
+                <a href="{{ .Permalink }}" class="read-more">Read More →</a>
+            </article>
+            {{ end }}
+        </div>
+    </section>
+</div>
+{{ end }}
