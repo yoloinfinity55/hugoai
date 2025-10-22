@@ -1,0 +1,19 @@
+baseURL: "https://example.com"
+title: "HugoAI Generated Content"
+
+# HugoAI specific settings
+hugo_content_dir: "content/posts"
+gemini_model: "gemini-2.0-flash-exp"
+retry:
+  max_attempts: 5
+  backoff_base: 1.5
+
+# Multilingual support
+defaultContentLanguage: "en"
+languages:
+  en:
+    languageName: "English"
+    weight: 1
+  zh:
+    languageName: "中文"
+    weight: 2
