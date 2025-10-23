@@ -16,7 +16,7 @@
 
         <div class="posts-container">
             {{ $posts := where .Site.RegularPages "Type" "posts" }}
-            {{ range $posts.ByDate.Reverse }}
+            {{ range $posts.ByPublishDate.Reverse }}
             <article class="post-card">
                 <div class="post-meta">
                     <time datetime="{{ .Date.Format "2006-01-02" }}">{{ .Date.Format "Jan 2, 2006" }}</time>

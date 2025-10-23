@@ -1,11 +1,12 @@
-```markdown
 ---
-title: Me at the Zoo - First YouTube Video
-date: 2023-10-27 # Replace with the actual date of the video/post
+title: 我在动物园 - YouTube 第一个视频
+date: 2005-04-23
+publishDate: 2005-04-23T00:00:00Z
+lastmod: 2025-10-22T00:00:00Z
 draft: false
-description: A look back at the first YouTube video ever uploaded, "Me at the zoo."
-tags: ["YouTube", "History", "Zoo", "First Video", "Jawed Karim"]
-categories: ["History", "Internet Culture"]
+description: 回顾 YouTube 历史上第一个上传的视频《我在动物园》，及其重要意义。
+tags: ["YouTube", "历史", "动物园", "第一个视频", "贾维德·卡里姆"]
+categories: ["历史", "互联网文化"]
 ---
 
 [TRANSCRIPT PLACEHOLDER - manual input required]
@@ -13,7 +14,7 @@ categories: ["History", "Internet Culture"]
 <!-- 
  **Important Considerations & Edits for the Above Template**
 
-*   **`date:`**:  Replace `2023-10-27` with the correct date the blog post is being created or, ideally, the date of the original video upload (if relevant).
+*   **`date:`**:  The date the blog post is being created or, ideally, the date of the original video upload (if relevant).
 *   **`draft: false`**:  This ensures the post is published. If you want to work on it and not have it public yet, set this to `true`.
 *   **`description:`**: Write a concise and compelling description of the post.  This is important for SEO and how the post appears in search results.  Aim for 150-160 characters.  Examples:
     *   "Reliving the iconic moment: A look back at Jawed Karim's "Me at the zoo," the first YouTube video and its lasting impact."
@@ -68,7 +69,8 @@ categories: ["History", "Internet Culture"]
 ```markdown
 ---
 title: Me at the Zoo - First YouTube Video
-date: 2005-04-23
+date: 2025-10-22
+lastmod: 2025-10-22
 draft: false
 description: A look back at the first YouTube video ever uploaded, "Me at the zoo."
 tags: ["YouTube", "History", "Zoo", "First Video", "Jawed Karim", "Internet History"]
@@ -104,4 +106,3 @@ What are your favorite early YouTube videos?  Share your thoughts in the comment
 
 Remember to tailor the template and the enhancements to the specific content of the transcript you provide. Good luck!
 -->
-```

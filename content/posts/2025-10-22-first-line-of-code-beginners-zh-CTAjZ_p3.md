@@ -1,8 +1,8 @@
-```markdown
 ---
 title: 有手就会的第一行代码-零基础入门【Re01从零开始的编程之路】
-date: 2023-10-27  # Replace with actual date
-lastmod: 2023-10-27  # Replace with actual date if updated
+date: 2025-10-22
+publishDate: 2025-10-22T00:00:00Z
+lastmod: 2025-10-22T00:00:00Z
 tags: [编程入门, Python, 零基础, Re01, 第一行代码]
 categories: [编程]
 slug: first-line-of-code-for-beginners
