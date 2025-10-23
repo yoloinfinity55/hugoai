@@ -5,6 +5,16 @@
 
 set -e  # Exit on any error
 
+# Check if test script exists and recommend running it
+if [ -f "test_setup.sh" ]; then
+    echo "🧪 Test script found! For best results, run './test_setup.sh' first to verify your environment."
+    read -p "Do you want to run the test script now? (y/N): " -n 1 -r
+    echo
+    if [[ $REPLY =~ ^[Yy]$ ]]; then
+        ./test_setup.sh
+    fi
+fi
+
 echo "🚀 Starting HugoAI setup on Mac Mini M1..."
 
 # Check if we're on macOS
